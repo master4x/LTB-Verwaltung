@@ -117,10 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lvIndexTable.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lvIndexTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 44</value>
+  </data>
+  <data name="lvIndexTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>788, 403</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lvIndexTable.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lvIndexTable.Name" xml:space="preserve">
+    <value>lvIndexTable</value>
+  </data>
+  <data name="&gt;&gt;lvIndexTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvIndexTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lvIndexTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="chOwnership.Text" xml:space="preserve">
     <value>Besitz</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="chOwnership.Width" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
@@ -153,32 +179,6 @@
   </data>
   <data name="chNote.Width" type="System.Int32, mscorlib">
     <value>183</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lvIndexTable.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lvIndexTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 44</value>
-  </data>
-  <data name="lvIndexTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>788, 403</value>
-  </data>
-  <data name="lvIndexTable.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lvIndexTable.Name" xml:space="preserve">
-    <value>lvIndexTable</value>
-  </data>
-  <data name="&gt;&gt;lvIndexTable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lvIndexTable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lvIndexTable.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btnOpen.Location" type="System.Drawing.Point, System.Drawing">
     <value>620, 10</value>
@@ -258,21 +258,6 @@
   <data name="&gt;&gt;ddEditionSelector.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="btnPrint.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnPrint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 10</value>
-  </data>
-  <data name="btnPrint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 21</value>
-  </data>
-  <data name="btnPrint.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="btnPrint.Text" xml:space="preserve">
-    <value>Export</value>
-  </data>
   <data name="&gt;&gt;btnPrint.Name" xml:space="preserve">
     <value>btnPrint</value>
   </data>
@@ -285,24 +270,6 @@
   <data name="&gt;&gt;btnPrint.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="cbShowNotOwned.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbShowNotOwned.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbShowNotOwned.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 12</value>
-  </data>
-  <data name="cbShowNotOwned.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 17</value>
-  </data>
-  <data name="cbShowNotOwned.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="cbShowNotOwned.Text" xml:space="preserve">
-    <value>nur fehlende</value>
-  </data>
   <data name="&gt;&gt;cbShowNotOwned.Name" xml:space="preserve">
     <value>cbShowNotOwned</value>
   </data>
@@ -314,24 +281,6 @@
   </data>
   <data name="&gt;&gt;cbShowNotOwned.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="cbShowOwned.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbShowOwned.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbShowOwned.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 12</value>
-  </data>
-  <data name="cbShowOwned.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 17</value>
-  </data>
-  <data name="cbShowOwned.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="cbShowOwned.Text" xml:space="preserve">
-    <value>nur vorhandene</value>
   </data>
   <data name="&gt;&gt;cbShowOwned.Name" xml:space="preserve">
     <value>cbShowOwned</value>
@@ -368,6 +317,57 @@
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="btnPrint.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPrint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>539, 10</value>
+  </data>
+  <data name="btnPrint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="btnPrint.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnPrint.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="cbShowNotOwned.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbShowNotOwned.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbShowNotOwned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 12</value>
+  </data>
+  <data name="cbShowNotOwned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 17</value>
+  </data>
+  <data name="cbShowNotOwned.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="cbShowNotOwned.Text" xml:space="preserve">
+    <value>nur fehlende</value>
+  </data>
+  <data name="cbShowOwned.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbShowOwned.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbShowOwned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 12</value>
+  </data>
+  <data name="cbShowOwned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="cbShowOwned.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="cbShowOwned.Text" xml:space="preserve">
+    <value>nur vorhandene</value>
   </data>
   <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4601,33 +4601,9 @@
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form</value>
+    <value>GUI</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnOpen.MessageBox.Text" xml:space="preserve">
-    <value>Es konnte keine Verbindung zum Server hergestellt werden.</value>
-  </data>
-  <data name="btnOpen.MessageBox.Title" xml:space="preserve">
-    <value>Verbindungsfehler</value>
-  </data>
-  <data name="btnPrint.MessageBox.Text" xml:space="preserve">
-    <value>Die CSV wurde auf den Desktop exportiert.</value>
-  </data>
-  <data name="btnPrint.MessageBox.Title" xml:space="preserve">
-    <value>Exportprozess abgeschlossen</value>
-  </data>
-  <data name="btnSave.MessageBox.Text" xml:space="preserve">
-    <value>Die CSV wurde auf dem Server gespeichert.</value>
-  </data>
-  <data name="btnSave.MessageBox.Title" xml:space="preserve">
-    <value>Speicherprozess abgeschlossen</value>
-  </data>
-  <data name="form.MessageBox.Text" xml:space="preserve">
-    <value>Sollen die Änderungen gespeichert werden?</value>
-  </data>
-  <data name="form.MessageBox.Title" xml:space="preserve">
-    <value>Ungesicherte Änderungen</value>
   </data>
 </root>

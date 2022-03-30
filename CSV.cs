@@ -97,7 +97,20 @@ namespace LTB_Verwaltung
         {
             using (var writer = new StreamWriter(WIN_TMP + WIN_FILE))
             {
-                List<string[]> library = LTB.Instance.GetCategory(-1);
+                List<string[]> library;
+
+                if (GUI.Instance.getCbShowOwnedState())
+                {
+                    library = LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(GUI.Instance.getDdEditionSelectorIndex()), true);
+                }
+                else if (GUI.Instance.getCbShowNotOwnedState())
+                {
+                    library = LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(GUI.Instance.getDdEditionSelectorIndex()), false);
+                }
+                else
+                {
+                    library = LTB.Instance.GetCategory(GUI.Instance.getDdEditionSelectorIndex());
+                }
 
                 foreach (var arr in library)
                 {

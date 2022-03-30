@@ -1,7 +1,7 @@
 ﻿
 namespace LTB_Verwaltung
 {
-    partial class Form
+    partial class GUI
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -29,7 +29,7 @@ namespace LTB_Verwaltung
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUI));
             this.lvIndexTable = new System.Windows.Forms.ListView();
             this.chOwnership = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -111,7 +111,6 @@ namespace LTB_Verwaltung
             resources.ApplyResources(this.ddEditionSelector, "ddEditionSelector");
             this.ddEditionSelector.FormattingEnabled = true;
             this.ddEditionSelector.Items.AddRange(new object[] {
-            resources.GetString("ddEditionSelector.Items"),
             LTB.Instance.categories[0],
             LTB.Instance.categories[1],
             LTB.Instance.categories[2],
@@ -154,7 +153,7 @@ namespace LTB_Verwaltung
             this.cbShowOwned.UseVisualStyleBackColor = true;
             this.cbShowOwned.CheckedChanged += new System.EventHandler(this.cbShowOwned_CheckedChanged);
             // 
-            // Form
+            // GUI
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -162,7 +161,7 @@ namespace LTB_Verwaltung
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form";
+            this.Name = "GUI";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.form_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

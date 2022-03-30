@@ -15,11 +15,11 @@ namespace LTB_Verwaltung
         public List<string[]> library4 = new List<string[]>();
         public List<string[]> library5 = new List<string[]>();
         public List<string[]> library6 = new List<string[]>();
-        public bool isDirty = false;
         public readonly string[] categories = new string[7]
         { "LTB", "LTB Enten Edition", "LTB Spezial", "LTB Festtagsspezial",
             "LTB Pocket", "LTB Sonderband", "LTB Exklusiv"
         };
+        public bool isDirty = false;
 
         private LTB() { }
 
@@ -185,6 +185,7 @@ namespace LTB_Verwaltung
 
         public void LoadLTB()
         {
+            // TODO Progressbar
             FTP.Instance.Download();
             CSV.Instance.ReadCSV();
         }
@@ -195,6 +196,7 @@ namespace LTB_Verwaltung
 
             if (upload)
             {
+                // TODO Progressbar
                 FTP.Instance.Upload();
             }
 

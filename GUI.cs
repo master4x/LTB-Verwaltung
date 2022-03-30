@@ -5,15 +5,33 @@ using System.Windows.Forms;
 
 namespace LTB_Verwaltung
 {
-    public partial class Form : System.Windows.Forms.Form
+    public partial class GUI : Form
     {
-        private readonly ComponentResourceManager resources = new ComponentResourceManager(typeof(Form));
-        private bool allowCheckChange = true;
-        private int lastSelectorState;
+        private static GUI instance = null;
+        private static readonly object padlock = new object();
 
-        public Form()
+        private readonly ComponentResourceManager resources = new ComponentResourceManager(typeof(GUI));
+        private bool allowCheckChange = true;
+        private int lastSelectorIndex;
+
+        private GUI()
         {
             InitializeComponent();
+        }
+
+        public static GUI Instance
+        {
+            get
+            {
+                lock (padlock)
+                {
+                    if (instance == null)
+                    {
+                        instance = new GUI();
+                    }
+                    return instance;
+                }
+            }
         }
 
         public ListViewItem CheckItem(ListViewItem listViewItem)
@@ -64,11 +82,27 @@ namespace LTB_Verwaltung
         }
 
 #pragma warning disable IDE1006
+        public bool getCbShowOwnedState()
+        {
+            return cbShowOwned.Checked;
+        }
+
+        public bool getCbShowNotOwnedState()
+        {
+            return cbShowNotOwned.Checked;
+        }
+
+        public int getDdEditionSelectorIndex()
+        {
+            return ddEditionSelector.SelectedIndex - 1;
+        }
+        
+
         private void lvIndexTable_ItemChecked(object sender, ItemCheckedEventArgs e)
         {
             if (allowCheckChange)
             {
-                LTB.Instance.ChangeLTB(e.Item.Tag.ToString(), e.Item.Checked, ddEditionSelector.SelectedIndex - 1);
+                LTB.Instance.ChangeLTB(e.Item.Tag.ToString(), e.Item.Checked, getDdEditionSelectorIndex());
             }
         }
 
@@ -78,11 +112,11 @@ namespace LTB_Verwaltung
             {
                 cbShowNotOwned.Checked = false;
 
-                AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(ddEditionSelector.SelectedIndex - 1), true));
+                AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), true));
             }
             else
             {
-                AppendItems(LTB.Instance.GetCategory(ddEditionSelector.SelectedIndex - 1));
+                AppendItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()));
             }
         }
 
@@ -92,11 +126,11 @@ namespace LTB_Verwaltung
             {
                 cbShowOwned.Checked = false;
 
-                AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(ddEditionSelector.SelectedIndex - 1), false));
+                AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), false));
             }
             else
             {
-                AppendItems(LTB.Instance.GetCategory(ddEditionSelector.SelectedIndex - 1));
+                AppendItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()));
             }
         }
 
@@ -113,7 +147,7 @@ namespace LTB_Verwaltung
             {
                 LTB.Instance.LoadLTB();
 
-                AppendItems(LTB.Instance.GetCategory(ddEditionSelector.SelectedIndex - 1));
+                AppendItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()));
 
                 ActivateInputs();
             }
@@ -132,16 +166,27 @@ namespace LTB_Verwaltung
 
         private void ddEditionSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int selectorState = ddEditionSelector.SelectedIndex - 1;
+            int selectorIndex = getDdEditionSelectorIndex();
 
-            if (selectorState != lastSelectorState)
+            if (selectorIndex != lastSelectorIndex)
             {
-                AppendItems(LTB.Instance.GetCategory(selectorState));
+                if (cbShowOwned.Checked)
+                {
+                    AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), true));
+                }
+                else if (cbShowNotOwned.Checked)
+                {
+                    AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), false));
+                }
+                else
+                {
+                    AppendItems(LTB.Instance.GetCategory(selectorIndex));
+                }
+                
+                //cbShowOwned.Checked = false;
+                //cbShowNotOwned.Checked = false;
 
-                cbShowOwned.Checked = false;
-                cbShowNotOwned.Checked = false;
-
-                lastSelectorState = selectorState;
+                lastSelectorIndex = selectorIndex;
             }
         }
 
