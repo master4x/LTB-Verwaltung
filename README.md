@@ -1,5 +1,5 @@
 # LTB-Verwaltung
-Eine freie Softwarelösung zur Verlatung von Lustigen Taschenbüchern (LTB).
+Eine freie Softwarelösung zur Verwatung von Lustigen Taschenbüchern (LTB).
 
 ### License
 This code is under MIT license.
