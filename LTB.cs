@@ -190,9 +190,9 @@ namespace LTB_Verwaltung
             CSV.Instance.ReadCSV();
         }
 
-        public void SaveLTB(bool upload, bool copy)
+        public void SaveLTB(bool printAll, bool upload, bool copy)
         {
-            CSV.Instance.WriteCSV();
+            CSV.Instance.WriteCSV(printAll);
 
             if (upload)
             {

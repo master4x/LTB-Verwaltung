@@ -136,7 +136,7 @@ namespace LTB_Verwaltung
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            LTB.Instance.SaveLTB(false, true);
+            LTB.Instance.SaveLTB(false, false, true);
 
             MessageBox.Show(resources.GetString("btnPrint.MessageBox.Text"), resources.GetString("btnPrint.MessageBox.Title"), MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -159,7 +159,7 @@ namespace LTB_Verwaltung
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            LTB.Instance.SaveLTB(true, false);
+            LTB.Instance.SaveLTB(true, true, false);
 
             MessageBox.Show(resources.GetString("btnSave.MessageBox.Text"), resources.GetString("btnSave.MessageBox.Title"), MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -182,9 +182,6 @@ namespace LTB_Verwaltung
                 {
                     AppendItems(LTB.Instance.GetCategory(selectorIndex));
                 }
-                
-                //cbShowOwned.Checked = false;
-                //cbShowNotOwned.Checked = false;
 
                 lastSelectorIndex = selectorIndex;
             }
@@ -198,7 +195,7 @@ namespace LTB_Verwaltung
 
                 if (saveFileDialog == DialogResult.Yes)
                 {
-                    LTB.Instance.SaveLTB(true, false);
+                    LTB.Instance.SaveLTB(true, true, false);
                 }
             }
 

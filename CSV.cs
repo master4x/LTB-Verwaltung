@@ -93,17 +93,17 @@ namespace LTB_Verwaltung
             }
         }
 
-        public void WriteCSV()
+        public void WriteCSV(bool printAll)
         {
             using (var writer = new StreamWriter(WIN_TMP + WIN_FILE))
             {
                 List<string[]> library;
 
-                if (GUI.Instance.getCbShowOwnedState())
+                if (GUI.Instance.getCbShowOwnedState() && !printAll)
                 {
                     library = LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(GUI.Instance.getDdEditionSelectorIndex()), true);
                 }
-                else if (GUI.Instance.getCbShowNotOwnedState())
+                else if (GUI.Instance.getCbShowNotOwnedState() && !printAll)
                 {
                     library = LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(GUI.Instance.getDdEditionSelectorIndex()), false);
                 }
