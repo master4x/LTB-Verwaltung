@@ -16,7 +16,7 @@ false;15;Der Diamantenkaiser;01.01.1971;LTB;Abenteuer mit Micky und Goofy
 false;16;Die Reise um die Welt;01.01.1971;LTB;Donald in 1000 und einer Nacht
 false;17;Die Wikinger Expedition;01.01.1971;LTB;Micky und Minni
 false;18;Gekreuzte Klingen;01.01.1971;LTB;Donald ist unschlagbar
-false;19;Das falsee Gold;01.01.1972;LTB;Pech für die Panzerknacker
+false;19;Das falsche Gold;01.01.1972;LTB;Pech für die Panzerknacker
 false;20;Der Hahn aus Mexiko;26.05.1972;LTB;Onkel Dagobert sieht rot
 false;21;Das Gold-Elixier;08.08.1972;LTB;7:0 für Onkel Dagobert
 false;22;Der alte Pirat;13.12.1972;LTB;Donald auf großer Fahrt
@@ -91,7 +91,7 @@ false;90;Mondbasis in Gefahr!;11.07.1983;LTB;Mickys Mondfahrt
 false;91;Das singende Totem;12.09.1983;LTB;Der Weg zum Erfolg
 false;92;Der Siegerkuss;14.11.1983;LTB;Donalds bunte Welt
 false;93;Glanz und Gloria derer von Duck;09.01.1984;LTB;Die Macht des Goldes
-false;94;Unter falseem Verdacht;12.03.1984;LTB;Micky groß in Form
+false;94;Unter falschem Verdacht;12.03.1984;LTB;Micky groß in Form
 false;95;Der sprechende Zauberberg;07.05.1984;LTB;Onkel Dagobert erzählt
 false;96;Ungeahnte Talente;01.06.1984;LTB;Donald bleibt auf Kurs
 false;97;Die heiße Spur;06.07.1984;LTB;Olympisches Allerlei
@@ -126,7 +126,7 @@ false;125;Entführt!;12.01.1988;LTB;Freie Fahrt für Phantomias
 false;126;Eine tolle Erfindung;01.03.1988;LTB;Donald, der Pechvogel
 false;127;Die Bergung der Gigantic;19.04.1988;LTB;Die Ducks auf Abwegen
 false;128;Der Duft des Geldes;07.06.1988;LTB;Goldregen bringt Segen
-false;129;Die Klima-Krise;19.07.1988;LTB;Einer spielt false!
+false;129;Die Klima-Krise;19.07.1988;LTB;Einer spielt falsch!
 false;130;Olympisches Feuer;30.08.1988;LTB;Olympisches Fieber
 false;131;Herzlichen Glückwunsch, Micky!;11.10.1988;LTB;60 Jahre Micky!
 false;132;Im Reich der Sterne;29.11.1988;LTB;
@@ -243,7 +243,7 @@ false;242;Wettlauf der Erben;06.01.1998;LTB;
 false;243;Heisse Tage in Afrika;03.02.1998;LTB;
 false;244;Der Schatz der Geisterberge;03.03.1998;LTB;
 false;245;Der Regenmacher;31.03.1998;LTB;
-false;246;falsees Spiel mit Phantomias;28.04.1998;LTB;
+false;246;Falsches Spiel mit Phantomias;28.04.1998;LTB;
 false;247;Donaldo der Ballzauberer;26.05.1998;LTB;
 false;248;Gefangen im Fürchteforst;23.06.1998;LTB;
 false;249;Der verrückte Professor;21.07.1998;LTB;
@@ -492,7 +492,7 @@ false;491;Die Schatzinsel;28.02.2017;LTB;
 false;492;Die Spur der Saphire;28.03.2017;LTB;
 false;493;Vereinte Kräfte;25.04.2017;LTB;
 false;494;Es geht um die Wurst!;23.05.2017;LTB;
-false;495;Ich packe meinen Koffer â€¦;20.06.2017;LTB;
+false;495;Ich packe meinen Koffer ...;20.06.2017;LTB;
 false;496;Ich mache Urlaub!;18.07.2017;LTB;
 false;497;Ich bin dann mal weg!;15.08.2017;LTB;
 false;498;Der Drachenkämpfer;12.09.2017;LTB;
@@ -550,7 +550,7 @@ false;549;Unter Dinos;17.08.2021;LTB;
 false;550;Reise zur Erdmitte;14.09.2021;LTB;
 false;551;Gefahr für Micky;12.10.2021;LTB;
 false;552;70 Jahre Panzerknacker;09.11.2021;LTB;
-false;553;Wie alles begannâ€¦;07.12.2021;LTB;
+false;553;Wie alles begann...;07.12.2021;LTB;
 false;1;Die Stunde des Phantomias;29.08.2000;LTB Enten Edition;
 false;2;Aus dem Leben des Milliardärs;21.06.2001;LTB Enten Edition;
 false;3;Die Abenteuer der Ducks;01.01.2001;LTB Enten Edition;
