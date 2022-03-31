@@ -189,7 +189,7 @@ namespace LTB_Verwaltung
 
         private void form_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (btnSave.Enabled & LTB.Instance.isDirty)
+            if (btnSave.Enabled && LTB.Instance.isDirty)
             {
                 DialogResult saveFileDialog = MessageBox.Show(resources.GetString("form.MessageBox.Text"), resources.GetString("form.MessageBox.Title"), MessageBoxButtons.YesNo);
 

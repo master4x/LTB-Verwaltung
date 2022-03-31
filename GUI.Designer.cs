@@ -1,5 +1,4 @@
-﻿
-namespace LTB_Verwaltung
+﻿namespace LTB_Verwaltung
 {
     partial class GUI
     {
