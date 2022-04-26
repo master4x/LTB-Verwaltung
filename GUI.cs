@@ -145,6 +145,8 @@ namespace LTB_Verwaltung
         {
             try
             {
+                Cursor.Current = Cursors.WaitCursor;
+
                 LTB.Instance.LoadLTB();
 
                 AppendItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()));
@@ -155,12 +157,25 @@ namespace LTB_Verwaltung
             {
                 MessageBox.Show(resources.GetString("btnOpen.MessageBox.Text"), resources.GetString("btnOpen.MessageBox.Title"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                Cursor.Current = Cursors.Default;
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            LTB.Instance.SaveLTB(true, true, false);
+            try
+            {
+                Cursor.Current = Cursors.WaitCursor;
 
+                LTB.Instance.SaveLTB(true, true, false);
+            }
+            finally
+            {
+                Cursor.Current = Cursors.Default;
+            }
+            
             MessageBox.Show(resources.GetString("btnSave.MessageBox.Text"), resources.GetString("btnSave.MessageBox.Title"), MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -195,7 +210,16 @@ namespace LTB_Verwaltung
 
                 if (saveFileDialog == DialogResult.Yes)
                 {
-                    LTB.Instance.SaveLTB(true, true, false);
+                    try
+                    {
+                        Cursor.Current = Cursors.WaitCursor;
+
+                        LTB.Instance.SaveLTB(true, true, false);
+                    }
+                    finally
+                    {
+                        Cursor.Current = Cursors.Default;
+                    }
                 }
             }
 

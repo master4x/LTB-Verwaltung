@@ -185,7 +185,6 @@ namespace LTB_Verwaltung
 
         public void LoadLTB()
         {
-            // TODO Progressbar
             FTP.Instance.Download();
             CSV.Instance.ReadCSV();
         }
@@ -196,7 +195,6 @@ namespace LTB_Verwaltung
 
             if (upload)
             {
-                // TODO Progressbar
                 FTP.Instance.Upload();
             }
 
