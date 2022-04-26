@@ -110,7 +110,9 @@ namespace LTB_Verwaltung
         {
             if (cbShowOwned.Checked)
             {
+                cbShowNotOwned.CheckedChanged -= cbShowNotOwned_CheckedChanged;
                 cbShowNotOwned.Checked = false;
+                cbShowNotOwned.CheckedChanged += cbShowNotOwned_CheckedChanged;
 
                 AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), true));
             }
@@ -124,7 +126,9 @@ namespace LTB_Verwaltung
         {
             if (cbShowNotOwned.Checked)
             {
+                cbShowOwned.CheckedChanged -= cbShowOwned_CheckedChanged;
                 cbShowOwned.Checked = false;
+                cbShowOwned.CheckedChanged += cbShowOwned_CheckedChanged;
 
                 AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), false));
             }
