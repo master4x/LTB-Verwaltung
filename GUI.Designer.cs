@@ -99,7 +99,7 @@
             resources.ApplyResources(this.ddEditionSelector, "ddEditionSelector");
             this.ddEditionSelector.FormattingEnabled = true;
             this.ddEditionSelector.Items.AddRange(new object[] {
-            resources.GetString("ddEditionSelector.Items"),
+            resources.GetString("ddEditionSelector.Items.Title"),
             LTB.Instance.categories[0],
             LTB.Instance.categories[1],
             LTB.Instance.categories[2],
