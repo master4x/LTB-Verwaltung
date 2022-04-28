@@ -13,22 +13,25 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>N:\LTB\</PublishUrl>
+    <PublishUrl>\\fritzbox-keller\nas\TOSHIBA_EXT\LTB\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
+    <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
+    <UpdateUrl>\\fritzbox-keller\nas\TOSHIBA_EXT\LTB\</UpdateUrl>
+    <SupportUrl>https://github.com/master4x/LTB-Verwaltung</SupportUrl>
     <TargetCulture>de</TargetCulture>
     <ProductName>LTB-Verwaltung</ProductName>
     <PublisherName>Leon Niklas Kelle</PublisherName>
     <SuiteName>LTB</SuiteName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
