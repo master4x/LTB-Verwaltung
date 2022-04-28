@@ -13,7 +13,7 @@
             base.Dispose(disposing);
         }
 
-        #region Vom Windows Form-Designer generierter Code
+        #region By Windows Form-Designer generated code
 
         private void InitializeComponent()
         {
