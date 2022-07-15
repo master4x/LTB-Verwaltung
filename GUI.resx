@@ -4659,4 +4659,28 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     <comment>By Windows Form-Designer generated code</comment>
   </data>
+  <data name="btnOpen.MessageBox.Text" xml:space="preserve">
+    <value>Es konnte keine Verbindung zum Server hergestellt werden.</value>
+  </data>
+  <data name="btnOpen.MessageBox.Title" xml:space="preserve">
+    <value>Fehler beim Verbindungsaufbau</value>
+  </data>
+  <data name="btnPrint.MessageBox.Text" xml:space="preserve">
+    <value>Die CSV wurde auf den Desktop exportiert.</value>
+  </data>
+  <data name="btnPrint.MessageBox.Title" xml:space="preserve">
+    <value>Exportprozess abgeschlossen</value>
+  </data>
+  <data name="btnSave.MessageBox.Text" xml:space="preserve">
+    <value>Die CSV wurde auf dem Server gespeichert.</value>
+  </data>
+  <data name="btnSave.MessageBox.Title" xml:space="preserve">
+    <value>Speicherprozess abgeschlossen</value>
+  </data>
+  <data name="form.MessageBox.Text" xml:space="preserve">
+    <value>Sollen die Änderungen gespeichert werden?</value>
+  </data>
+  <data name="form.MessageBox.Title" xml:space="preserve">
+    <value>Ungesicherte Änderungen</value>
+  </data>
 </root>
