@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 
 namespace LTB_Verwaltung
 {
@@ -46,23 +47,10 @@ namespace LTB_Verwaltung
             }
         }
 
-        private List<string[]> GetAllCategorys()
+        private List<string[]> GetAllCategories()
         {
-            List<string[]> library = new List<string[]>
-                (library0.Count + library1.Count +
-                library2.Count + library3.Count +
-                library4.Count + library5.Count +
-                library6.Count);
-
-            library.AddRange(library0);
-            library.AddRange(library1);
-            library.AddRange(library2);
-            library.AddRange(library3);
-            library.AddRange(library4);
-            library.AddRange(library5);
-            library.AddRange(library6);
-
-            return library;
+            return (List<string[]>)library0.Concat(library1).Concat(library2).Concat(library3)
+                .Concat(library4).Concat(library5).Concat(library6).ToList();
         }
 
         public List<string[]> GetCategory(int categroyId)
@@ -84,7 +72,7 @@ namespace LTB_Verwaltung
                 case 6:
                     return library6;
                 default:
-                    return GetAllCategorys();
+                    return GetAllCategories();
             }
         }
 
