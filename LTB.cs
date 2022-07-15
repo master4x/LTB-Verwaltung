@@ -93,79 +93,32 @@ namespace LTB_Verwaltung
 
         public void ChangeLTB(string itemTag, bool checkState, int categoryId)
         {
+            List<string[]> library = null;
+
             isDirty = true;
 
             switch (categoryId)
             {
                 case 0:
-                    foreach (var item in library0)
-                    {
-                        if (item[2].Equals(itemTag))
-                        {
-                            item[0] = checkState.ToString().ToLower();
-                            break;
-                        }
-                    }
+                    library = library0;
                     break;
                 case 1:
-                    foreach (var item in library1)
-                    {
-                        if (item[2].Equals(itemTag))
-                        {
-                            item[0] = checkState.ToString().ToLower();
-                            break;
-                        }
-                    }
+                    library = library1;
                     break;
                 case 2:
-                    foreach (var item in library2)
-                    {
-                        if (item[2].Equals(itemTag))
-                        {
-                            item[0] = checkState.ToString().ToLower();
-                            break;
-                        }
-                    }
+                    library = library2;
                     break;
                 case 3:
-                    foreach (var item in library3)
-                    {
-                        if (item[2].Equals(itemTag))
-                        {
-                            item[0] = checkState.ToString().ToLower();
-                            break;
-                        }
-                    }
+                    library = library3;
                     break;
                 case 4:
-                    foreach (var item in library4)
-                    {
-                        if (item[2].Equals(itemTag))
-                        {
-                            item[0] = checkState.ToString().ToLower();
-                            break;
-                        }
-                    }
+                    library = library4;
                     break;
                 case 5:
-                    foreach (var item in library5)
-                    {
-                        if (item[2].Equals(itemTag))
-                        {
-                            item[0] = checkState.ToString().ToLower();
-                            break;
-                        }
-                    }
+                    library = library5;
                     break;
                 case 6:
-                    foreach (var item in library6)
-                    {
-                        if (item[2].Equals(itemTag))
-                        {
-                            item[0] = checkState.ToString().ToLower();
-                            break;
-                        }
-                    }
+                    library = library6;
                     break;
                 default:
                     ChangeLTB(itemTag, checkState, 0);
@@ -177,6 +130,19 @@ namespace LTB_Verwaltung
                     ChangeLTB(itemTag, checkState, 6);
                     break;
             }
+
+            if (library != null)
+            {
+                foreach (var item in library)
+                {
+                    if (item[2].Equals(itemTag))
+                    {
+                        item[0] = checkState.ToString().ToLower();
+                        break;
+                    }
+                }
+            }
+            
         }
 
         public void LoadLTB()
