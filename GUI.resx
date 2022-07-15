@@ -137,12 +137,15 @@
   </data>
   <data name="&gt;&gt;lvIndexTable.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;lvIndexTable.Parent" xml:space="preserve">
     <value>$this</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;lvIndexTable.ZOrder" xml:space="preserve">
     <value>0</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="chOwnership.Text" xml:space="preserve">
     <value>Besitz</value>
@@ -197,12 +200,15 @@
   </data>
   <data name="&gt;&gt;btnOpen.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;btnOpen.Parent" xml:space="preserve">
     <value>panel1</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;btnOpen.ZOrder" xml:space="preserve">
     <value>3</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="btnSave.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -224,12 +230,15 @@
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>panel1</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>4</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="ddEditionSelector.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -272,12 +281,15 @@
   </data>
   <data name="&gt;&gt;ddEditionSelector.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;ddEditionSelector.Parent" xml:space="preserve">
     <value>panel1</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;ddEditionSelector.ZOrder" xml:space="preserve">
     <value>5</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="btnPrint.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -299,12 +311,15 @@
   </data>
   <data name="&gt;&gt;btnPrint.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
     <value>panel1</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;btnPrint.ZOrder" xml:space="preserve">
     <value>0</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="cbShowNotOwned.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -329,12 +344,15 @@
   </data>
   <data name="&gt;&gt;cbShowNotOwned.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;cbShowNotOwned.Parent" xml:space="preserve">
     <value>panel1</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;cbShowNotOwned.ZOrder" xml:space="preserve">
     <value>1</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="cbShowOwned.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -359,12 +377,15 @@
   </data>
   <data name="&gt;&gt;cbShowOwned.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;cbShowOwned.Parent" xml:space="preserve">
     <value>panel1</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;cbShowOwned.ZOrder" xml:space="preserve">
     <value>2</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -383,18 +404,22 @@
   </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="$this.AccessibleName" xml:space="preserve">
     <value />
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -4590,41 +4615,48 @@
   </data>
   <data name="&gt;&gt;chOwnership.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;chNumber.Name" xml:space="preserve">
     <value>chNumber</value>
   </data>
   <data name="&gt;&gt;chNumber.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;chTitle.Name" xml:space="preserve">
     <value>chTitle</value>
   </data>
   <data name="&gt;&gt;chTitle.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;chPublication.Name" xml:space="preserve">
     <value>chPublication</value>
   </data>
   <data name="&gt;&gt;chPublication.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;chEdition.Name" xml:space="preserve">
     <value>chEdition</value>
   </data>
   <data name="&gt;&gt;chEdition.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;chNote.Name" xml:space="preserve">
     <value>chNote</value>
   </data>
   <data name="&gt;&gt;chNote.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>GUI</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>By Windows Form-Designer generated code</comment>
   </data>
 </root>
