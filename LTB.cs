@@ -157,6 +157,8 @@ namespace LTB_Verwaltung
 
             if (upload)
             {
+                isDirty = false;
+
                 FTP.Instance.Upload();
             }
 
