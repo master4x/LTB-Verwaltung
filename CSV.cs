@@ -34,14 +34,6 @@ namespace LTB_Verwaltung
         {
             using (var reader = new StreamReader(WIN_TMP + WIN_FILE))
             {
-                List<string[]> data0 = new List<string[]>();
-                List<string[]> data1 = new List<string[]>();
-                List<string[]> data2 = new List<string[]>();
-                List<string[]> data3 = new List<string[]>();
-                List<string[]> data4 = new List<string[]>();
-                List<string[]> data5 = new List<string[]>();
-                List<string[]> data6 = new List<string[]>();
-
                 while (!reader.EndOfStream)
                 {
                     string line = reader.ReadLine();
@@ -56,25 +48,25 @@ namespace LTB_Verwaltung
                             switch (i)
                             {
                                 case 0:
-                                    data0.Add(values);
+                                    LTB.Instance.library0.Add(values);
                                     break;
                                 case 1:
-                                    data1.Add(values);
+                                    LTB.Instance.library1.Add(values);
                                     break;
                                 case 2:
-                                    data2.Add(values);
+                                    LTB.Instance.library2.Add(values);
                                     break;
                                 case 3:
-                                    data3.Add(values);
+                                    LTB.Instance.library3.Add(values);
                                     break;
                                 case 4:
-                                    data4.Add(values);
+                                    LTB.Instance.library4.Add(values);
                                     break;
                                 case 5:
-                                    data5.Add(values);
+                                    LTB.Instance.library5.Add(values);
                                     break;
                                 case 6:
-                                    data6.Add(values);
+                                    LTB.Instance.library6.Add(values);
                                     break;
                             }
                         }
@@ -82,14 +74,6 @@ namespace LTB_Verwaltung
                 }
 
                 reader.Close();
-
-                LTB.Instance.library0 = data0;
-                LTB.Instance.library1 = data1;
-                LTB.Instance.library2 = data2;
-                LTB.Instance.library3 = data3;
-                LTB.Instance.library4 = data4;
-                LTB.Instance.library5 = data5;
-                LTB.Instance.library6 = data6;
             }
         }
 
