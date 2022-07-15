@@ -1,6 +1,5 @@
-﻿using System.ComponentModel;
-using System.Collections.Generic;
-using System.Windows.Forms;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace LTB_Verwaltung
 {
@@ -8,17 +7,15 @@ namespace LTB_Verwaltung
     {
         private static LTB instance = null;
         private static readonly object padlock = new object();
-        private static ComponentResourceManager resources = new ComponentResourceManager(typeof(GUI));
+        private static readonly ComponentResourceManager resources = new ComponentResourceManager(typeof(GUI));
 
-        public List<string[]> library0 = new List<string[]>();
-        public List<string[]> library1 = new List<string[]>();
-        public List<string[]> library2 = new List<string[]>();
-        public List<string[]> library3 = new List<string[]>();
-        public List<string[]> library4 = new List<string[]>();
-        public List<string[]> library5 = new List<string[]>();
-        public List<string[]> library6 = new List<string[]>();
-        public bool isDirty = false;
-        
+        public List<string[]> library0 = new List<string[]>(), 
+            library1 = new List<string[]>(), 
+            library2 = new List<string[]>(), 
+            library3 = new List<string[]>(), 
+            library4 = new List<string[]>(), 
+            library5 = new List<string[]>(), 
+            library6 = new List<string[]>();
         public readonly string[] categories = new string[7]
         {
             resources.GetString("ddEditionSelector.Items1"),
@@ -30,6 +27,7 @@ namespace LTB_Verwaltung
             resources.GetString("ddEditionSelector.Items7")
 
         };
+        public bool isDirty = false;
 
         private LTB() { }
 
