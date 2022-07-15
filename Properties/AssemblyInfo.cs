@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("LTB-Verwaltung")]
-[assembly: AssemblyDescription("Organisiere deine Lustigen Taschenbücher, kurz LTBs")]
+[assembly: AssemblyDescription("Organisiere deine Lustigen Taschenbücher")]
 #if DEBUG
 [assembly: AssemblyConfiguration("Debug")]
 #else
