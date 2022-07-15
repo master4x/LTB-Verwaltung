@@ -132,6 +132,18 @@
   <data name="lvIndexTable.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;lvIndexTable.Name" xml:space="preserve">
+    <value>lvIndexTable</value>
+  </data>
+  <data name="&gt;&gt;lvIndexTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvIndexTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lvIndexTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="chOwnership.Text" xml:space="preserve">
     <value>Besitz</value>
   </data>
@@ -180,6 +192,18 @@
   <data name="btnOpen.Text" xml:space="preserve">
     <value>Öffnen</value>
   </data>
+  <data name="&gt;&gt;btnOpen.Name" xml:space="preserve">
+    <value>btnOpen</value>
+  </data>
+  <data name="&gt;&gt;btnOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOpen.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnOpen.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="btnSave.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -195,32 +219,65 @@
   <data name="btnSave.Text" xml:space="preserve">
     <value>Speichern</value>
   </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="ddEditionSelector.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="ddEditionSelector.Items.Title" xml:space="preserve">
+  <data name="ddEditionSelector.Items" xml:space="preserve">
     <value>Alle LTBs</value>
+  </data>
+  <data name="ddEditionSelector.Items1" xml:space="preserve">
+    <value>LTB</value>
+  </data>
+  <data name="ddEditionSelector.Items2" xml:space="preserve">
+    <value>LTB Enten Edition</value>
+  </data>
+  <data name="ddEditionSelector.Items3" xml:space="preserve">
+    <value>LTB Spezial</value>
+  </data>
+  <data name="ddEditionSelector.Items4" xml:space="preserve">
+    <value>LTB Festtagsspezial</value>
+  </data>
+  <data name="ddEditionSelector.Items5" xml:space="preserve">
+    <value>LTB Pocket</value>
+  </data>
+  <data name="ddEditionSelector.Items6" xml:space="preserve">
+    <value>LTB Sonderband</value>
+  </data>
+  <data name="ddEditionSelector.Items7" xml:space="preserve">
+    <value>LTB Exklusiv</value>
   </data>
   <data name="ddEditionSelector.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 10</value>
   </data>
   <data name="ddEditionSelector.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 21</value>
+    <value>286, 21</value>
   </data>
   <data name="ddEditionSelector.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;ddEditionSelector.Name" xml:space="preserve">
+    <value>ddEditionSelector</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;ddEditionSelector.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>788, 44</value>
+  <data name="&gt;&gt;ddEditionSelector.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;ddEditionSelector.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="btnPrint.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -236,6 +293,18 @@
   </data>
   <data name="btnPrint.Text" xml:space="preserve">
     <value>Export</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Name" xml:space="preserve">
+    <value>btnPrint</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="cbShowNotOwned.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -255,6 +324,18 @@
   <data name="cbShowNotOwned.Text" xml:space="preserve">
     <value>nur fehlende</value>
   </data>
+  <data name="&gt;&gt;cbShowNotOwned.Name" xml:space="preserve">
+    <value>cbShowNotOwned</value>
+  </data>
+  <data name="&gt;&gt;cbShowNotOwned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbShowNotOwned.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cbShowNotOwned.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="cbShowOwned.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -273,9 +354,45 @@
   <data name="cbShowOwned.Text" xml:space="preserve">
     <value>nur vorhandene</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;cbShowOwned.Name" xml:space="preserve">
+    <value>cbShowOwned</value>
   </data>
+  <data name="&gt;&gt;cbShowOwned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbShowOwned.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cbShowOwned.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>788, 44</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AccessibleName" xml:space="preserve">
     <value />
   </data>
@@ -4468,28 +4585,46 @@
   <data name="$this.Text" xml:space="preserve">
     <value>LTB Buchverwaltung</value>
   </data>
-  <data name="btnOpen.MessageBox.Text" xml:space="preserve">
-    <value>Es konnte keine Verbindung zum Server hergestellt werden.</value>
+  <data name="&gt;&gt;chOwnership.Name" xml:space="preserve">
+    <value>chOwnership</value>
   </data>
-  <data name="btnOpen.MessageBox.Title" xml:space="preserve">
-    <value>Fehler beim Verbindungsaufbau</value>
+  <data name="&gt;&gt;chOwnership.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnPrint.MessageBox.Text" xml:space="preserve">
-    <value>Die CSV wurde auf den Desktop exportiert.</value>
+  <data name="&gt;&gt;chNumber.Name" xml:space="preserve">
+    <value>chNumber</value>
   </data>
-  <data name="btnPrint.MessageBox.Title" xml:space="preserve">
-    <value>Exportprozess abgeschlossen</value>
+  <data name="&gt;&gt;chNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnSave.MessageBox.Text" xml:space="preserve">
-    <value>Die CSV wurde auf dem Server gespeichert.</value>
+  <data name="&gt;&gt;chTitle.Name" xml:space="preserve">
+    <value>chTitle</value>
   </data>
-  <data name="btnSave.MessageBox.Title" xml:space="preserve">
-    <value>Speicherprozess abgeschlossen</value>
+  <data name="&gt;&gt;chTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="form.MessageBox.Text" xml:space="preserve">
-    <value>Sollen die Änderungen gespeichert werden?</value>
+  <data name="&gt;&gt;chPublication.Name" xml:space="preserve">
+    <value>chPublication</value>
   </data>
-  <data name="form.MessageBox.Title" xml:space="preserve">
-    <value>Ungesicherte Änderungen</value>
+  <data name="&gt;&gt;chPublication.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chEdition.Name" xml:space="preserve">
+    <value>chEdition</value>
+  </data>
+  <data name="&gt;&gt;chEdition.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chNote.Name" xml:space="preserve">
+    <value>chNote</value>
+  </data>
+  <data name="&gt;&gt;chNote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GUI</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

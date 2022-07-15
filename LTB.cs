@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.ComponentModel;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace LTB_Verwaltung
@@ -7,6 +8,7 @@ namespace LTB_Verwaltung
     {
         private static LTB instance = null;
         private static readonly object padlock = new object();
+        private static ComponentResourceManager resources = new ComponentResourceManager(typeof(GUI));
 
         public List<string[]> library0 = new List<string[]>();
         public List<string[]> library1 = new List<string[]>();
@@ -15,11 +17,19 @@ namespace LTB_Verwaltung
         public List<string[]> library4 = new List<string[]>();
         public List<string[]> library5 = new List<string[]>();
         public List<string[]> library6 = new List<string[]>();
-        public readonly string[] categories = new string[7]
-        { "LTB", "LTB Enten Edition", "LTB Spezial", "LTB Festtagsspezial",
-            "LTB Pocket", "LTB Sonderband", "LTB Exklusiv"
-        };
         public bool isDirty = false;
+        
+        public readonly string[] categories = new string[7]
+        {
+            resources.GetString("ddEditionSelector.Items1"),
+            resources.GetString("ddEditionSelector.Items2"),
+            resources.GetString("ddEditionSelector.Items3"),
+            resources.GetString("ddEditionSelector.Items4"),
+            resources.GetString("ddEditionSelector.Items5"),
+            resources.GetString("ddEditionSelector.Items6"),
+            resources.GetString("ddEditionSelector.Items7")
+
+        };
 
         private LTB() { }
 
