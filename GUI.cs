@@ -140,7 +140,16 @@ namespace LTB_Verwaltung
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            LTB.Instance.SaveLTB(false, false, true);
+            try
+            {
+                Cursor.Current = Cursors.WaitCursor;
+
+                LTB.Instance.SaveLTB(false, false, true);
+            }
+            finally
+            {
+                Cursor.Current = Cursors.Default;
+            }
 
             MessageBox.Show(resources.GetString("btnPrint.MessageBox.Text"), resources.GetString("btnPrint.MessageBox.Title"), MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
