@@ -32,6 +32,11 @@ namespace LTB_Verwaltung
             }
         }
 
+        public void OpenConfig()
+        {
+            System.Diagnostics.Process.Start(System.AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+        }
+
 #pragma warning disable IDE0017
         public void Download()
         {

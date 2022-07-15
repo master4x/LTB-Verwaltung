@@ -168,6 +168,7 @@ namespace LTB_Verwaltung
             }
             catch (System.Net.WebException)
             {
+                FTP.Instance.OpenConfig();
                 MessageBox.Show(resources.GetString("btnOpen.MessageBox.Text"), resources.GetString("btnOpen.MessageBox.Title"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
