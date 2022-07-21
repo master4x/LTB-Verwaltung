@@ -23,7 +23,6 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <UpdateUrl>\\fritzbox-keller\nas\TOSHIBA_EXT\LTB\</UpdateUrl>
     <SupportUrl>https://github.com/master4x/LTB-Verwaltung</SupportUrl>
     <TargetCulture>de</TargetCulture>
     <ProductName>LTB-Verwaltung</ProductName>
@@ -31,8 +30,8 @@
     <SuiteName>LTB</SuiteName>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -126,6 +125,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="App.Debug.config">
+        <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.Release.config">
+        <DependentUpon>App.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -143,4 +148,9 @@
     <None Include="Resources\%24this.Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="SetAppConfig" BeforeTargets="Compile">
+    <Copy SourceFiles="App.Debug.config" DestinationFiles="App.config" OverwriteReadOnlyFiles="true" Condition=" '$(Configuration)' == 'Debug' " />
+    <Copy SourceFiles="App.Release.config" DestinationFiles="App.config" OverwriteReadOnlyFiles="true" Condition=" '$(Configuration)' == 'Release' " />
+    <Message Text="App.config was set by Target" />
+  </Target>
 </Project>

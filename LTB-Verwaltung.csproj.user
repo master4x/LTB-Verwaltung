@@ -3,7 +3,7 @@
   <PropertyGroup>
     <PublishUrlHistory>\\fritzbox-keller\nas\TOSHIBA_EXT\LTB\|N:\LTB\|ftp://fb.leonkelle.eu/|Y:\LTB\|C:\Users\lnkel\Desktop\</PublishUrlHistory>
     <InstallUrlHistory>\\fritzbox-keller\nas\TOSHIBA_EXT\|\\NAS\LTB\</InstallUrlHistory>
-    <SupportUrlHistory />
+    <SupportUrlHistory>https://github.com/master4x/LTB-Verwaltung</SupportUrlHistory>
     <UpdateUrlHistory>\\fritzbox-keller\nas\TOSHIBA_EXT\LTB\</UpdateUrlHistory>
     <BootstrapperUrlHistory />
     <ErrorReportUrlHistory />
