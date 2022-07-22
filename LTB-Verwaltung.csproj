@@ -23,8 +23,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <InstallUrl>https://raw.githubusercontent.com/master4x/LTB-Verwaltung/releases/</InstallUrl>
-    <UpdateUrl>https://raw.githubusercontent.com/master4x/LTB-Verwaltung/releases/</UpdateUrl>
+    <InstallUrl>https://master4x.github.io/LTB-Verwaltung/</InstallUrl>
+    <UpdateUrl>https://master4x.github.io/LTB-Verwaltung/</UpdateUrl>
     <SupportUrl>https://github.com/master4x/LTB-Verwaltung</SupportUrl>
     <TargetCulture>de</TargetCulture>
     <ProductName>LTB-Verwaltung</ProductName>
