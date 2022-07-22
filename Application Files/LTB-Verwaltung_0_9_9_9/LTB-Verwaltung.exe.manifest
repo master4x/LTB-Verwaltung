@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="LTB-Verwaltung.exe" version="0.9.9.9" publicKeyToken="bcad0ad64e4231e7" language="de" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\$this.Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="LTB-Verwaltung" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="LTB-Verwaltung.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LTB-Verwaltung.exe" size="532936">
+      <assemblyIdentity name="LTB-Verwaltung" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OSIsc1TgSa0SBpu4RGUNMcwcxSwMEAgZgIeMqqJiGQw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="LTB-Verwaltung.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\$this.Icon.ico" size="250334">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2aY2dus6e2CUE3Ks3ffTHxKeARc738SQusgFcOLPqHo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LEGION-Y540\lnkel" issuerKeyHash="49bcb720e6c269a2b6a1a24d793cdfff277b4a48" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ztm8kVjM6kk2afNd2RkbIbJNAhVYAK0SVOtxwjSsh6k=</DigestValue></Reference></SignedInfo><SignatureValue>ZYgYjwaeFuZc1Qi9gwiozaOQ2vpv51gzqMo5W1tquIzwQ64hME9DG9xYpBcR9rr2MdGusE1RPbiFfeLuawx2P1uxdVB0kcwbQZizrZpyP2OFZxUOyndmSxe4xHs1yGkchfWjL0p9UHUL6T4MsZARDwQ+PF31LHO+u1OXgtqd3vc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6F6Ag6tbKkBS/desZwtG2ttGYQqGGkZWF3U3WX+m7TpPr4Yci897aS+WnIQTRB+TRNAYWvtHrL2Ep5Bgv+EdQ9Kp4eB8t+9l/6P9U1OSlhiTLEAAeZ1bib2Gdn8T2M8NnM5/RpoI5v1w8bhv5R756zaa7L5qOTwU0Luw8jXwCQE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a987ac34c271eb5412ad005815024db2211b19d95df3693649eacc5891bcd9ce" Description="" Url=""><as:assemblyIdentity name="LTB-Verwaltung.exe" version="0.9.9.9" publicKeyToken="bcad0ad64e4231e7" language="de" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LEGION-Y540\lnkel</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fjOww2M0rKtukVPvGO7VdBAC4gNhp9B15XMTsw8n9TA=</DigestValue></Reference></SignedInfo><SignatureValue>S3XDFFO/YUZXo4AQlwidkBW9ntYR8vHhL8srnCbydrLuZvyE4quR77pOoGBgmw/JVHXv0ub+e7SSKfE98fkIJ1B5NGdAaEnjTtOe2onhZm1pnmMzoQP/AsWdsf0Y1t4HFjIXQ0cDbk1VnKLRA40odYG0d0z4UcRtPOBaNMM4j7A=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6F6Ag6tbKkBS/desZwtG2ttGYQqGGkZWF3U3WX+m7TpPr4Yci897aS+WnIQTRB+TRNAYWvtHrL2Ep5Bgv+EdQ9Kp4eB8t+9l/6P9U1OSlhiTLEAAeZ1bib2Gdn8T2M8NnM5/RpoI5v1w8bhv5R756zaa7L5qOTwU0Luw8jXwCQE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQH0ND9wt7nK9L1o2G1O9fwTANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIATABFAEcASQBPAE4ALQBZADUANAAwAFwAbABuAGsAZQBsMB4XDTIyMDEwNTE1MzIzMVoXDTIzMDEwNTIxMzIzMVowLTErMCkGA1UEAx4iAEwARQBHAEkATwBOAC0AWQA1ADQAMABcAGwAbgBrAGUAbDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA6F6Ag6tbKkBS/desZwtG2ttGYQqGGkZWF3U3WX+m7TpPr4Yci897aS+WnIQTRB+TRNAYWvtHrL2Ep5Bgv+EdQ9Kp4eB8t+9l/6P9U1OSlhiTLEAAeZ1bib2Gdn8T2M8NnM5/RpoI5v1w8bhv5R756zaa7L5qOTwU0Luw8jXwCQECAwEAATANBgkqhkiG9w0BAQsFAAOBgQB2FOHHoNDGBWdo0p7P9nyAtVo7TxHPUF5ruKDNpgw50gN0VXXD1wjVvFs+Pmmdtp8XsQ67bU+l29cR0epWuu8r2y03MgMw6rxkyufYFN/lhXeol1jfFBAd8lJhXBo+Xuh7ICJWiyuS9XQ5n/+UAgnkiP93gfUpsNLBp8zIw7bEpw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
