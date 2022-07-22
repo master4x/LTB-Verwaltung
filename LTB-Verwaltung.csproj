@@ -92,6 +92,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Messaging" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -156,5 +157,8 @@
     <Copy SourceFiles="App.Debug.config" DestinationFiles="App.config" OverwriteReadOnlyFiles="true" Condition=" '$(Configuration)' == 'Debug' " />
     <Copy SourceFiles="App.Release.config" DestinationFiles="App.config" OverwriteReadOnlyFiles="true" Condition=" '$(Configuration)' == 'Release' " />
     <Message Text="App.config was set by Target" />
+  </Target>
+  <Target Name="BeforePublish">
+    <Error Condition=" '$(DebugSymbols)' == 'true' " Text="You attempted to publish a configuration that defines the DEBUG constant!" />
   </Target>
 </Project>
