@@ -1,5 +1,6 @@
 # LTB-Verwaltung
 Collection Software for German LTB "Lustige Taschenbücher". The Application works as a reader for DB-CSV files on an external FTP-Server.
+
 ![This is an image](/Resources/$this.Icon.ico)
 
 ## Download
