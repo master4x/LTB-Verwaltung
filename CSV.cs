@@ -83,13 +83,13 @@ namespace LTB_Verwaltung
             {
                 List<string[]> library;
 
-                if (!printAll)
+                if (printAll)
                 {
-                    library = LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(GUI.Instance.getDdEditionSelectorIndex()), GUI.Instance.getCbShowOwnedState());
+                    library = LTB.Instance.GetCategory(-1);
                 }
                 else
                 {
-                    library = LTB.Instance.GetCategory(-1);
+                    library = LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(GUI.Instance.getDdEditionSelectorIndex()), GUI.Instance.getCbShowOwnedState());
                 }
 
                 foreach (var arr in library)
