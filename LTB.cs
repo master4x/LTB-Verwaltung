@@ -91,6 +91,34 @@ namespace LTB_Verwaltung
             return newLibrary;
         }
 
+        public void AddLTB(string[] book, int library)
+        {
+            switch (library)
+            {
+                case 0:
+                    library0.Add(book);
+                    break;
+                case 1:
+                    library1.Add(book);
+                    break;
+                case 2:
+                    library2.Add(book);
+                    break;
+                case 3:
+                    library3.Add(book);
+                    break;
+                case 4:
+                    library4.Add(book);
+                    break;
+                case 5:
+                    library5.Add(book);
+                    break;
+                case 6:
+                    library6.Add(book);
+                    break;
+            }
+        }
+
         public void ChangeLTB(string itemTag, bool checkState, int categoryId)
         {
             List<string[]> library = null;

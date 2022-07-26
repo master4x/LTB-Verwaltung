@@ -45,30 +45,7 @@ namespace LTB_Verwaltung
                         {
                             values[4] = LTB.Instance.categories[i];
 
-                            switch (i)
-                            {
-                                case 0:
-                                    LTB.Instance.library0.Add(values);
-                                    break;
-                                case 1:
-                                    LTB.Instance.library1.Add(values);
-                                    break;
-                                case 2:
-                                    LTB.Instance.library2.Add(values);
-                                    break;
-                                case 3:
-                                    LTB.Instance.library3.Add(values);
-                                    break;
-                                case 4:
-                                    LTB.Instance.library4.Add(values);
-                                    break;
-                                case 5:
-                                    LTB.Instance.library5.Add(values);
-                                    break;
-                                case 6:
-                                    LTB.Instance.library6.Add(values);
-                                    break;
-                            }
+                            LTB.Instance.AddLTB(values, i);
                         }
                     }
                 }
