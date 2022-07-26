@@ -66,7 +66,7 @@ namespace LTB_Verwaltung
                 }
                 else
                 {
-                    library = LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(GUI.Instance.getDdEditionSelectorIndex()), GUI.Instance.getCbShowOwnedState());
+                    library = LTB.Instance.GetSpecificLTB(LTB.Instance.GetCategory(GUI.Instance.getDdEditionSelectorIndex()), GUI.Instance.getCbShowOwnedState());
                 }
 
                 foreach (var arr in library)

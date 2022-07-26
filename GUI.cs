@@ -114,7 +114,7 @@ namespace LTB_Verwaltung
                 cbShowNotOwned.Checked = false;
                 cbShowNotOwned.CheckedChanged += cbShowNotOwned_CheckedChanged;
 
-                AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), true));
+                AppendItems(LTB.Instance.GetSpecificLTB(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), true));
             }
             else
             {
@@ -130,7 +130,7 @@ namespace LTB_Verwaltung
                 cbShowOwned.Checked = false;
                 cbShowOwned.CheckedChanged += cbShowOwned_CheckedChanged;
 
-                AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), false));
+                AppendItems(LTB.Instance.GetSpecificLTB(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), false));
             }
             else
             {
@@ -201,11 +201,11 @@ namespace LTB_Verwaltung
             {
                 if (cbShowOwned.Checked)
                 {
-                    AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), true));
+                    AppendItems(LTB.Instance.GetSpecificLTB(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), true));
                 }
                 else if (cbShowNotOwned.Checked)
                 {
-                    AppendItems(LTB.Instance.GetSpecificItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), false));
+                    AppendItems(LTB.Instance.GetSpecificLTB(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), false));
                 }
                 else
                 {

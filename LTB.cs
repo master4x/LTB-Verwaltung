@@ -76,7 +76,7 @@ namespace LTB_Verwaltung
             }
         }
 
-        public List<string[]> GetSpecificItems(List<string[]> baseLibrary, bool showOwned)
+        public List<string[]> GetSpecificLTB(List<string[]> baseLibrary, bool showOwned)
         {
             List<string[]> newLibrary = new List<string[]>();
 
