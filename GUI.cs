@@ -97,7 +97,6 @@ namespace LTB_Verwaltung
             return ddEditionSelector.SelectedIndex - 1;
         }
         
-
         private void lvIndexTable_ItemChecked(object sender, ItemCheckedEventArgs e)
         {
             if (allowCheckChange)
