@@ -30,7 +30,7 @@
     <ProductName>LTB-Verwaltung</ProductName>
     <PublisherName>Leon Niklas Kelle</PublisherName>
     <SuiteName>LTB</SuiteName>
-    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <MinimumRequiredVersion>1.0.2.2</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.html</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
