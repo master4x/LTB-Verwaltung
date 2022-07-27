@@ -200,11 +200,11 @@ namespace LTB_Verwaltung
             {
                 if (cbShowOwned.Checked)
                 {
-                    AppendItems(LTB.Instance.GetSpecificLTB(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), true));
+                    AppendItems(LTB.Instance.GetSpecificLTB(LTB.Instance.GetCategory(selectorIndex), true));
                 }
                 else if (cbShowNotOwned.Checked)
                 {
-                    AppendItems(LTB.Instance.GetSpecificLTB(LTB.Instance.GetCategory(getDdEditionSelectorIndex()), false));
+                    AppendItems(LTB.Instance.GetSpecificLTB(LTB.Instance.GetCategory(selectorIndex), false));
                 }
                 else
                 {
