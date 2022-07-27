@@ -64,7 +64,7 @@ namespace LTB_Verwaltung
                 lvIndexTable.Items.Add(listViewItem);
             }
 
-            allowCheckChange = !allowCheckChange;
+            allowCheckChange = true;
         }
 
         public void ActivateInputs()
