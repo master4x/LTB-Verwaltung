@@ -47,6 +47,19 @@ namespace LTB_Verwaltung
             }
         }
 
+        public int GetCategoryIdByName(string categoryName)
+        {
+            for (int i = 0; i < categories.Length; i++)
+            {
+                if (categories[i].Equals(categoryName))
+                {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+
         private List<string[]> GetAllCategories()
         {
             return (List<string[]>)library0.Concat(library1).Concat(library2).Concat(library3)
@@ -119,58 +132,21 @@ namespace LTB_Verwaltung
             }
         }
 
-        public void ChangeLTB(string itemTag, bool checkState, int categoryId)
+        public void ChangeLTB(string bookTag, bool checkState)
         {
-            List<string[]> library = null;
+            string[] bookInfo = bookTag.Split('.');
+            
+            List<string[]> library = GetCategory(int.Parse(bookInfo[0]));
 
-            isDirty = true;
-
-            switch (categoryId)
+            foreach (var book in library)
             {
-                case 0:
-                    library = library0;
-                    break;
-                case 1:
-                    library = library1;
-                    break;
-                case 2:
-                    library = library2;
-                    break;
-                case 3:
-                    library = library3;
-                    break;
-                case 4:
-                    library = library4;
-                    break;
-                case 5:
-                    library = library5;
-                    break;
-                case 6:
-                    library = library6;
-                    break;
-                default:
-                    ChangeLTB(itemTag, checkState, 0);
-                    ChangeLTB(itemTag, checkState, 1);
-                    ChangeLTB(itemTag, checkState, 2);
-                    ChangeLTB(itemTag, checkState, 3);
-                    ChangeLTB(itemTag, checkState, 4);
-                    ChangeLTB(itemTag, checkState, 5);
-                    ChangeLTB(itemTag, checkState, 6);
-                    break;
-            }
-
-            if (library != null)
-            {
-                foreach (var item in library)
+                if (book[1].Equals(bookInfo[1]))
                 {
-                    if (item[2].Equals(itemTag))
-                    {
-                        item[0] = checkState.ToString().ToLower();
-                        break;
-                    }
+                    book[0] = checkState.ToString().ToLower();
+                    isDirty = true;
+                    break;
                 }
             }
-            
         }
 
         public void LoadLTB()

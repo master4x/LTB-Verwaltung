@@ -57,7 +57,7 @@ namespace LTB_Verwaltung
             {
                 ListViewItem listViewItem = new ListViewItem(arrayItem);
 
-                listViewItem.Tag = arrayItem[2];
+                listViewItem.Tag = LTB.Instance.GetCategoryIdByName(arrayItem[4]) + "." + arrayItem[1];
 
                 listViewItem = CheckItem(listViewItem);
 
@@ -101,7 +101,7 @@ namespace LTB_Verwaltung
         {
             if (allowCheckChange)
             {
-                LTB.Instance.ChangeLTB(e.Item.Tag.ToString(), e.Item.Checked, getDdEditionSelectorIndex());
+                LTB.Instance.ChangeLTB(e.Item.Tag.ToString(), e.Item.Checked);
             }
         }
 
