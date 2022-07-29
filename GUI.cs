@@ -159,7 +159,7 @@ namespace LTB_Verwaltung
             {
                 Cursor.Current = Cursors.WaitCursor;
 
-                LTB.Instance.LoadLTB();
+                LTB.Instance.LoadLTB(true);
 
                 AppendItems(LTB.Instance.GetCategory(getDdEditionSelectorIndex()));
 

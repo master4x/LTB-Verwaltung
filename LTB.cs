@@ -149,9 +149,11 @@ namespace LTB_Verwaltung
             }
         }
 
-        public void LoadLTB()
+        public void LoadLTB(bool download)
         {
-            FTP.Instance.Download();
+            if (download)
+                FTP.Instance.Download();
+
             CSV.Instance.ReadCSV();
         }
 
