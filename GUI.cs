@@ -58,7 +58,6 @@ namespace LTB_Verwaltung
                 ListViewItem listViewItem = new ListViewItem(arrayItem);
 
                 listViewItem.Tag = LTB.Instance.GetCategoryIdByName(arrayItem[4]) + "." + arrayItem[1];
-
                 listViewItem = CheckItem(listViewItem);
 
                 lvIndexTable.Items.Add(listViewItem);

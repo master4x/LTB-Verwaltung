@@ -41,7 +41,8 @@ namespace LTB_Verwaltung
                     if (instance == null)
                     {
                         instance = new LTB();
-                    }
+                    }    
+                    
                     return instance;
                 }
             }
@@ -152,7 +153,9 @@ namespace LTB_Verwaltung
         public void LoadLTB(bool download)
         {
             if (download)
+            {
                 FTP.Instance.Download();
+            }
 
             CSV.Instance.ReadCSV();
         }
